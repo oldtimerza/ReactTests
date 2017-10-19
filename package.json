@@ -1,0 +1,22 @@
+{
+  "name": "test-bed",
+  "version": "0.0.1",
+  "description": "A test playground for react",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel --presets es2015 components/ --out-dir compiled/",
+    "test": "npm run compile && mocha ./tests/*.test.js --compilers js:babel-core/register"
+  },
+  "author": "Bradley Morris",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.1.0",
+    "mocha": "^4.0.1"
+  }
+}
